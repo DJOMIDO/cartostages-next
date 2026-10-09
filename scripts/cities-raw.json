@@ -1,0 +1,223 @@
+{
+ "aix-en-provence": {
+  "lat": 43.5298,
+  "lng": 5.4475,
+  "name": "Aix-en-Provence"
+ },
+ "avignon": {
+  "lat": 43.9492,
+  "lng": 4.8059,
+  "name": "Avignon"
+ },
+ "besançon": {
+  "lat": 47.238,
+  "lng": 6.0244,
+  "name": "Besançon"
+ },
+ "blois": {
+  "lat": 47.5877,
+  "lng": 1.3338,
+  "name": "Blois"
+ },
+ "brest": {
+  "lat": 48.3905,
+  "lng": -4.486,
+  "name": "Brest"
+ },
+ "bry-sur-marne": {
+  "lat": 48.8353,
+  "lng": 2.5193,
+  "name": "Bry-sur-Marne"
+ },
+ "caen": {
+  "lat": 49.1813,
+  "lng": -0.3636,
+  "name": "Caen"
+ },
+ "cergy": {
+  "lat": 49.0528,
+  "lng": 2.0389,
+  "name": "Cergy"
+ },
+ "champs-sur-marne": {
+  "lat": 48.8527,
+  "lng": 2.6027,
+  "name": "Champs-sur-Marne"
+ },
+ "clamart": {
+  "lat": 48.8004,
+  "lng": 2.263,
+  "name": "Clamart"
+ },
+ "grenoble": {
+  "lat": 45.1876,
+  "lng": 5.7358,
+  "name": "Grenoble"
+ },
+ "grenoble ou rennes": {
+  "lat": 45.1876,
+  "lng": 5.7358,
+  "name": "Grenoble"
+ },
+ "issy-les-moulineaux": {
+  "lat": 48.8251,
+  "lng": 2.2735,
+  "name": "Issy-les-Moulineaux"
+ },
+ "jouy-en-josas": {
+  "lat": 48.7646,
+  "lng": 2.1685,
+  "name": "Jouy-en-Josas"
+ },
+ "la défense": {
+  "lat": 48.8535,
+  "lng": 2.3484,
+  "name": "Paris"
+ },
+ "lannion": {
+  "lat": 48.7322,
+  "lng": -3.4588,
+  "name": "Lannion"
+ },
+ "lille": {
+  "lat": 50.6366,
+  "lng": 3.0635,
+  "name": "Lille"
+ },
+ "louvain-la-neuve": {
+  "lat": 45.9899,
+  "lng": 4.7636,
+  "name": "Avenue d'Ottignies-Louvain-la-Neuve"
+ },
+ "lyon": {
+  "lat": 45.7578,
+  "lng": 4.832,
+  "name": "Lyon"
+ },
+ "marseille": {
+  "lat": 43.2964,
+  "lng": 5.3778,
+  "name": "Marseille"
+ },
+ "meudon": {
+  "lat": 48.8127,
+  "lng": 2.2385,
+  "name": "Meudon"
+ },
+ "montpellier": {
+  "lat": 43.6112,
+  "lng": 3.8767,
+  "name": "Montpellier"
+ },
+ "montpellier ou paris": {
+  "lat": 43.6112,
+  "lng": 3.8767,
+  "name": "Montpellier"
+ },
+ "nancy": {
+  "lat": 48.6937,
+  "lng": 6.1834,
+  "name": "Nancy"
+ },
+ "nanterre": {
+  "lat": 48.8924,
+  "lng": 2.2071,
+  "name": "Nanterre"
+ },
+ "nantes": {
+  "lat": 47.2186,
+  "lng": -1.5541,
+  "name": "Nantes"
+ },
+ "neuilly": {
+  "lat": 48.8847,
+  "lng": 2.2696,
+  "name": "Neuilly-sur-Seine"
+ },
+ "nice": {
+  "lat": 43.7009,
+  "lng": 7.2684,
+  "name": "Nice"
+ },
+ "orléans": {
+  "lat": 47.9027,
+  "lng": 1.9086,
+  "name": "Orléans"
+ },
+ "orsay": {
+  "lat": 48.6992,
+  "lng": 2.1875,
+  "name": "Orsay"
+ },
+ "orsay / jouy-en-josas": {
+  "lat": 48.6992,
+  "lng": 2.1875,
+  "name": "Orsay"
+ },
+ "palaiseau": {
+  "lat": 48.7145,
+  "lng": 2.2454,
+  "name": "Palaiseau"
+ },
+ "paris": {
+  "lat": 48.8535,
+  "lng": 2.3484,
+  "name": "Paris"
+ },
+ "paris / marseille": {
+  "lat": 48.8535,
+  "lng": 2.3484,
+  "name": "Paris"
+ },
+ "paris ou montpellier": {
+  "lat": 48.8535,
+  "lng": 2.3484,
+  "name": "Paris"
+ },
+ "paris ou télétravail": {
+  "lat": 48.8535,
+  "lng": 2.3484,
+  "name": "Paris"
+ },
+ "rennes": {
+  "lat": 48.1113,
+  "lng": -1.68,
+  "name": "Rennes"
+ },
+ "saclay": {
+  "lat": 48.7305,
+  "lng": 2.1726,
+  "name": "Saclay"
+ },
+ "saint-denis": {
+  "lat": 48.9384,
+  "lng": 2.3628,
+  "name": "Saint-Denis"
+ },
+ "sophia-antipolis": {
+  "lat": 43.6411,
+  "lng": 7.0086,
+  "name": "Valbonne"
+ },
+ "toulouse": {
+  "lat": 43.6045,
+  "lng": 1.4442,
+  "name": "Toulouse"
+ },
+ "tours": {
+  "lat": 47.39,
+  "lng": 0.6889,
+  "name": "Tours"
+ },
+ "troyes": {
+  "lat": 48.2972,
+  "lng": 4.0746,
+  "name": "Troyes"
+ },
+ "télétravail": null,
+ "villetaneuse": {
+  "lat": 48.9612,
+  "lng": 2.344,
+  "name": "Villetaneuse"
+ }
+}
