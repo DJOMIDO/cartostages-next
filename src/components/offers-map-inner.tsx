@@ -52,16 +52,12 @@ export default function OffersMapInner({ offers }: { offers: MapOffer[] }) {
               {o.location && <p className="text-sm text-neutral-500">{o.location}</p>}
               <div className="flex items-center justify-between pt-1 text-xs text-neutral-500">
                 <span>{formatDateFr(o.postedAt)}</span>
-                {o.descriptionUrl && (
-                  <a
-                    href={o.descriptionUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-medium text-[#00838f] hover:underline"
-                  >
-                    Détails →
-                  </a>
-                )}
+                <a
+                  href={`/offre/${o.id}`}
+                  className="font-medium text-[#00838f] hover:underline"
+                >
+                  Détails →
+                </a>
               </div>
             </div>
           </Popup>

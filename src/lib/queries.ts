@@ -43,7 +43,7 @@ export async function listAllForAdmin(): Promise<Offer[]> {
   return db.select().from(offers).orderBy(desc(offers.postedAt));
 }
 
-export async function getOfferById(id: string) {
+export async function getOfferById(id: string): Promise<Offer | null> {
   const rows = await db.select().from(offers).where(eq(offers.id, id)).limit(1);
   return rows[0] ?? null;
 }
