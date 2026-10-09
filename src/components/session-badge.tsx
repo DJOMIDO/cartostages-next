@@ -33,7 +33,7 @@ export function SessionBadge() {
         size="sm"
         variant="ghost"
         className="text-muted-foreground"
-        onClick={() => signOut({ redirectTo: "/" })}
+        onClick={() => signOut({ callbackURL: "/" })}
       >
         Déconnexion
       </Button>

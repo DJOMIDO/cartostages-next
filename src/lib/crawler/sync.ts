@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { db } from "@/lib/db/client";
 import { offers } from "@/lib/db/schema";
 import { eq, and } from "drizzle-orm";
-import { parseOfferTable, WAGA_OFFRES_URL, type ParsedOffer } from "./parse";
+import { parseOfferTable, WAGA_OFFRES_URL } from "./parse";
 import { resolveCityCoords } from "./city-coords";
 
 export interface SyncResult {

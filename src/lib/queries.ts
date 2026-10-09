@@ -27,7 +27,7 @@ export async function listOffers(opts: {
 }
 
 export async function getStats() {
-  const [row] = await db
+  const rows = await db
     .select({
       total: sql<number>`count(*)::int`,
       stages: sql<number>`count(*) filter (where ${eq(offers.contractType, "stage")})::int`,
@@ -36,17 +36,14 @@ export async function getStats() {
     })
     .from(offers)
     .where(ACTIVE);
-  return row;
+  return rows[0];
 }
 
-export async function listAllForAdmin(opts: { archived?: boolean } = {}): Promise<Offer[]> {
-  const q = db.select().from(offers);
-  if (opts.archived !== undefined) {
-    return q.where(eq(offers.archived, opts.archived)).orderBy(desc(offers.postedAt)).all();
-  }
-  return q.orderBy(desc(offers.postedAt)).all();
+export async function listAllForAdmin(): Promise<Offer[]> {
+  return db.select().from(offers).orderBy(desc(offers.postedAt));
 }
 
 export async function getOfferById(id: string) {
-  return db.select().from(offers).where(eq(offers.id, id)).get();
+  const rows = await db.select().from(offers).where(eq(offers.id, id)).limit(1);
+  return rows[0] ?? null;
 }

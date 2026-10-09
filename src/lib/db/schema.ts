@@ -3,7 +3,6 @@ import {
   text,
   timestamp,
   date,
-  integer,
   boolean,
   doublePrecision,
   uniqueIndex,

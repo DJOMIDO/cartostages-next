@@ -55,11 +55,11 @@ export function parseOfferTable(html: string): ParsedOffer[] {
           .replace(/&#(\d+);/g, (_, d) => String.fromCharCode(Number(d)))
           .replace(/\s+/g, " ")
           .trim();
-      const [dateCell, orgCell, locCell, titleCell] = cells;
-      const hrefMatch = titleCell.match(/href=["']([^"']+)["']/i);
+      const [dateCell = "", orgCell = "", locCell = "", titleCell = ""] = cells;
+      const href = titleCell.match(/href=["']([^"']+)["']/i)?.[1];
       const title = textOf(titleCell);
       if (!title) continue;
-      const sourceId = hrefMatch ? hrefMatch[1] : `waga-${type}-${normalizeDate(textOf(dateCell))}-${title}`;
+      const sourceId = href ?? `waga-${type}-${normalizeDate(textOf(dateCell))}-${title}`;
       const { location, city } = parseLocation(textOf(locCell));
       offers.push({
         sourceId: `waga:${sourceId}`,
@@ -69,7 +69,7 @@ export function parseOfferTable(html: string): ParsedOffer[] {
         city,
         contractType: type,
         postedAt: normalizeDate(textOf(dateCell)),
-        descriptionUrl: hrefMatch ? new URL(hrefMatch[1], WAGA_OFFRES_URL).href : null,
+        descriptionUrl: href ? new URL(href, WAGA_OFFRES_URL).href : null,
       });
     }
   }
