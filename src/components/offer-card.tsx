@@ -5,9 +5,9 @@ import { Card } from "@/components/ui/card";
 import type { Offer } from "@/lib/db/schema";
 
 const CONTRACT_LABEL: Record<Offer["contractType"], { label: string; className: string }> = {
-  stage: { label: "Stage", className: "bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-100" },
-  "cdi-cdd": { label: "CDI / CDD", className: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-100" },
-  "post-doc": { label: "Post-doc", className: "bg-violet-100 text-violet-800 dark:bg-violet-900 dark:text-violet-100" },
+  stage: { label: "Stage", className: "bg-[#00838f]/10 text-[#00838f] dark:bg-[#22a7b4]/20 dark:text-[#22a7b4]" },
+  "cdi-cdd": { label: "CDI / CDD", className: "bg-[#e84f10]/10 text-[#e84f10] dark:bg-[#e84f10]/25 dark:text-[#ff8a55]" },
+  "post-doc": { label: "Post-doc", className: "bg-[#1e2d4d]/10 text-[#1e2d4d] dark:bg-zinc-700 dark:text-zinc-200" },
 };
 
 export function formatDateFr(d: string | null) {

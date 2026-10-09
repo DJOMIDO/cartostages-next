@@ -20,7 +20,7 @@ export default async function HomePage() {
         </p>
         <h1 className="mx-auto max-w-2xl text-balance text-4xl font-bold tracking-tight sm:text-5xl">
           Les offres de stage en{" "}
-          <span className="text-primary">TAL / NLP</span>, sur une carte
+          <span className="text-[#e84f10]">TAL / NLP</span>, sur une carte
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-pretty text-muted-foreground">
           Stages, CDI/CDD et post-docs en traitement automatique des langues en

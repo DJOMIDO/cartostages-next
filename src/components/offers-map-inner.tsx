@@ -8,9 +8,9 @@ import { formatDateFr } from "@/components/offer-card";
 import type { MapOffer } from "@/app/carte/page";
 
 const COLORS: Record<string, string> = {
-  stage: "#10b981",
-  "cdi-cdd": "#3b82f6",
-  "post-doc": "#8b5cf6",
+  stage: "#00838f",
+  "cdi-cdd": "#e84f10",
+  "post-doc": "#1e2d4d",
 };
 
 function iconFor(type: string) {
@@ -57,7 +57,7 @@ export default function OffersMapInner({ offers }: { offers: MapOffer[] }) {
                     href={o.descriptionUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="font-medium text-blue-600 hover:underline"
+                    className="font-medium text-[#00838f] hover:underline"
                   >
                     Détails →
                   </a>
