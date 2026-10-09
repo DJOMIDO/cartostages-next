@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MapPin, Search, GraduationCap, Menu, X } from "lucide-react";
 import { SessionBadge } from "@/components/session-badge";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 
 const NAV = [
@@ -66,12 +67,14 @@ export function SiteHeader() {
           {NAV.map((item) => (
             <NavLink key={item.href} {...item} active={isActive(item.href)} />
           ))}
+          <ThemeToggle className="text-[#1e2d4d] dark:text-zinc-200" />
           <SessionBadge />
         </nav>
 
         {/* Mobile: session + hamburger */}
         <div className="flex items-center gap-1 md:hidden">
           <SessionBadge compact />
+          <ThemeToggle className="text-[#1e2d4d] dark:text-zinc-200" />
           <button
             aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
             onClick={() => setOpen((v) => !v)}
